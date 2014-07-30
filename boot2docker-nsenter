@@ -1,0 +1,10 @@
+#!/bin/sh
+
+echo "Installing nsenter"
+tce-load -wil util-linux 2> /dev/null
+
+echo "Installing docker-enter"
+cd $HOME
+curl -sOL https://raw.githubusercontent.com/YungSang/docker-attach/master/docker-nsenter
+chmod +x docker-nsenter
+sudo mv -f docker-nsenter /usr/local/bin/docker-enter
