@@ -1,7 +1,7 @@
 FROM debian:jessie
 
-ENV VERSION 2.24
-ENV RELEASE 2.24.2
+ENV VERSION 2.25
+ENV RELEASE 2.25
 
 RUN apt-get update -q && apt-get install -qy curl build-essential
 
